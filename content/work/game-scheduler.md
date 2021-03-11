@@ -40,25 +40,17 @@ Having limited experience in this space, I began doing what most people would st
 
 
 ### Design and Prototyping
-Researching Amazon web services that will help us build a distributed system.
 
-#### Framework
-Amplify. 
-Why amplify? It has some handy features out of the box:  
-- request and response validation is built in with GraphQL.
-- automated documentation
-- ease of integration with a database (DynamoDB)
-- ease of extending functionality outside of the framework (i.e. connecting the GraphQL API to lambdas)
+I then began researching AWS resources that would allow me to create an event driven distributed system. The research concluded with the need of the following services:
+- Amazon Cognito - an authentication and authorization service
+- Lambda - a service that lets us run code without provisioning or managing servers
+- Cloud Watch Events - a service that provides "real-time" stream of system events that happen in AWS resources 
+- Simple Notification Service - a messaging service for application to application or application to person communication
+- Simple Email Service - a service allows us to send emails
+- GraphQL - a query langauge for developing APIs 
+- DynamoDb - a NoSQL database 
+- Amplify - a serverless framework that will help us glue a lot of these services from above (i.e. graphQL API, Cognito, DynamoDB, etc.)
 
-#### Authentication:
-AWS Cognito User Pools. It seamlessly integrates with Amplify and will handle the bulk of user creation and authentication.
-
-#### Database:
-DynamoDB: why was the dynamodb a good candidate for the app?
-
-#### Extended Functionality:
-Lambda. Heavily supported, supported out of the box by amplify. Use lambdas to process email notifications.
 
 #### Architecture:
-*Image of the architecture*
-![Alt Text](/images/work/game-scheduler/architecture.png)
+![Alt Text](/images/work/game-scheduler/architecture-white-bg.png)
