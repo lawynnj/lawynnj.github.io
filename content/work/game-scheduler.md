@@ -53,4 +53,6 @@ I then began researching AWS resources that would allow me to create an event dr
 
 
 #### Architecture:
+There were a few iterations for the design after consulting with some folks over in the Amazon Web Services discord to clarify any issues. 
+
 ![Alt Text](/images/work/game-scheduler/architecture-white-bg.png)
