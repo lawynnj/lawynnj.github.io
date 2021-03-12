@@ -3,8 +3,9 @@ title: Poker Game Scheduler
 date: "2021-01"
 slug: "game-scheduler"
 selectedWork: true
-description: "Create a poll to schedulen a poker game and send email notifications."
+description: "Create a poll to schedule a poker game and send email notifications."
 previewImage: "/images/work/game-scheduler/600-400.png"
+githubLink: "https://github.com/lawynnj/game-scheduler"
 ---
 
 > **Role**: System Design, Engineering.

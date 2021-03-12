@@ -15,24 +15,16 @@ export const StyledCards = styled.section`
   article.article {
     margin: 0 0 2%;
     overflow: hidden;
-
-    &:hover h2 {
-      color: #fff;
-    }
-    &:hover p {
-      color: var(--text-color-bright);
-    }
+    max-width: 400px;
 
     img {
       transition: all var(--animation-duration)
         var(--transition-timing-function);
       object-fit: cover;
     }
-
     &:hover img {
       transform: scale(1.1);
     }
-
     @media all and (min-width: 560px) {
       margin-right: 0.5em;
       flex: 0 1 48%;
@@ -49,6 +41,20 @@ export const StyledCards = styled.section`
       }
     }
   }
+  .external-link {
+    display: block;
+    &:hover {
+      color: --text-color-white;
+    }
+  }
+  .article-body {
+    &:hover h2 {
+      color: #fff;
+    }
+    &:hover p {
+      color: var(--text-color-bright);
+    }
+  }
 
   @media all and (min-width: 560px) {
     justify-content: space-between;
@@ -60,7 +66,7 @@ export const StyledCards = styled.section`
     font-size: 0.9em;
   }
 
-  a {
+  a.article-link {
     text-decoration: none;
 
     &:hover {
