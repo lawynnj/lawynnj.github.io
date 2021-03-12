@@ -11,7 +11,7 @@ previewImage: "/images/work/game-scheduler/600-400.png"
 
 ## The Problem
 
-A few of friends and I started playing poker regularly, but we were using Instagram chats to schedule games... 😅. 
+A few of friends and I started playing poker regularly, but we were using Instagram chats to schedule games (I know, not the greatest idea). 
 
 As the organizer of every game I would message a few dates, times and buy-in amounts and get people to like (vote) the options. Once everyone voted, I would count and announce the official date, time and buy-in amount and send reminders to the players throughout the week.
 
@@ -62,17 +62,15 @@ After some research, I concluded that the following AWS resources will be requir
 - Amplify - a serverless framework that will help us glue these services together 
 
 ## Back-end Architecture:
-I created a few iterations of the system architecture and had some folks over in the Amazon Web Services discord server look over it. 
+I created a few iterations of the system architecture diagram and had some folks over in the Amazon Web Services discord server look over it. 
 
 ![Alt Text](/images/work/game-scheduler/architecture-white-bg.png)
 
 
 
 
-## Low fidelity front-end designs
+## Low Fidelity Prototypes 
 
 ![Alt Text](/images/work/game-scheduler/lf-1.jpg)
 ![Alt Text](/images/work/game-scheduler/lf-2.jpg)
 ![Alt Text](/images/work/game-scheduler/lf-3.jpg)
-
-*include images of the low fidelity designs*
