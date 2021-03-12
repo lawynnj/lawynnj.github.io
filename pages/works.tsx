@@ -9,11 +9,11 @@ const Work = ({ works }) => {
   return (
     <Layout
       pathname={"/works"}
-      pageTitle="Works &amp; Projects"
-      pageDescription="Works and projects spanning software engineering, system design with ReactJS, NodeJs, Amazon Web Services, and Python."
+      pageTitle="Projects"
+      pageDescription="Projects spanning software engineering, system design with ReactJS, NodeJs, Amazon Web Services, and Python."
     >
       <Container>
-        <p className="page-intro">Selected works I'm proud of.</p>
+        <p className="page-intro">Selected projects I'm proud of.</p>
         <Cards data={works} basePath="works" />
       </Container>
     </Layout>

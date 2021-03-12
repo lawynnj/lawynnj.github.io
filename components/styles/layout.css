@@ -15,7 +15,7 @@
   --text-color-dark: #777;
   --text-color-bright: #999;
   --text-color-white: #fff;
-  --prim-color: #b94c50;
+  --prim-color: #fff;
 
   --transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
   --animation-duration: 0.25s;

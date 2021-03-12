@@ -34,7 +34,7 @@ const Nav = () => {
             <ul className="navLinkList">
               <li className="navLinkItem">
                 <Link href="/works">
-                  <a>Work</a>
+                  <a>Projects</a>
                 </Link>
               </li>
 

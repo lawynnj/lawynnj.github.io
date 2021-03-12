@@ -12,7 +12,7 @@ const About = () => {
     <Layout
       pathname={"/about"}
       pageTitle="About"
-      pageDescription="About page of Lawynn Jana, Software Engineer based in Toronto, On"
+      pageDescription="About page of Lawynn Jana, Software Engineer based in Toronto, ON"
     >
       <StyledAbout>
         <Container width="narrow">

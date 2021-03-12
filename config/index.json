@@ -3,13 +3,13 @@
     "name": "Lawynn Jana",
     "title": "Hi, I'm Lawynn Jana",
     "twitterHandle": "@lawynnjana",
-    "description": "I'm Software Engineer based in Toronto, On, specializing in building full-stack web applications. I have a heavy interest in working with distributed systems and I'm looking to pivot into a pure backend role."
+    "description": "I'm Software Engineer based in Toronto, ON, specializing in building full-stack web applications. I have a heavy interest in working with distributed systems and I'm looking to pivot into a pure backend role."
   },
   "site": {
     "siteUrl": "https://lawynnj.github.io",
     "siteName": "Lawynn Jana - Portfolio",
     "siteTitle": "Lawynn Jana - Portfolio",
-    "siteDescription": "Lawynn Jana is a Software Engineer based in Toronto, On",
+    "siteDescription": "Lawynn Jana is a Software Engineer based in Toronto, ON",
     "keywords": "Lawynn Jana, JavaScript, Python, Java, NodeJs,  Software Engineer Toronto, ReactJs Engineer, Full-stack Engineer, Fullstack Engineer, Python Engineer Toronto, Java Engineer, Software Engineer Markham",
     "siteImage": "../public/Logo.png"
   }
