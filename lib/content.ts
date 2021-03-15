@@ -6,13 +6,10 @@ import { exception } from "console";
 import remark from "remark";
 import html from "remark-html";
 import remarkPrism from "remark-prism";
-import { IContentData } from "../pages/articles/[id]";
 
 const workDirectory = path.join(process.cwd(), "content", "work");
-const notesDirectory = path.join(process.cwd(), "content", "notes");
-const articlesDirectory = path.join(process.cwd(), "content", "articles");
 
-type IContentType = "articles" | "notes" | "work";
+type IContentType = "work";
 
 /**
  * Get IDs of all markdown post
@@ -25,16 +22,6 @@ export const getAllContentIds = (contentType: IContentType) => {
 
   // determine where to look for content types
   switch (contentType) {
-    case "articles":
-      baseDir = articlesDirectory;
-      filenames = fs.readdirSync(articlesDirectory);
-      break;
-
-    case "notes":
-      baseDir = notesDirectory;
-      filenames = fs.readdirSync(notesDirectory);
-      break;
-
     case "work":
       baseDir = workDirectory;
       filenames = fs.readdirSync(workDirectory);
@@ -71,16 +58,6 @@ export const getContentData = async (id: string, contentType: IContentType) => {
   let contentTypeDirectory;
   let filenames;
   switch (contentType) {
-    case "articles":
-      filenames = fs.readdirSync(articlesDirectory);
-      contentTypeDirectory = articlesDirectory;
-      break;
-
-    case "notes":
-      filenames = fs.readdirSync(notesDirectory);
-      contentTypeDirectory = notesDirectory;
-      break;
-
     case "work":
       filenames = fs.readdirSync(workDirectory);
       contentTypeDirectory = workDirectory;
@@ -135,17 +112,6 @@ export const getContentList = (contentType: IContentType) => {
   let contentDir;
 
   switch (contentType) {
-    case "articles":
-      contentFiles = fs.readdirSync(articlesDirectory);
-      contentDir = articlesDirectory;
-
-      break;
-
-    case "notes":
-      contentFiles = fs.readdirSync(notesDirectory);
-      contentDir = notesDirectory;
-      break;
-
     case "work":
       contentFiles = fs.readdirSync(workDirectory);
       contentDir = workDirectory;
@@ -170,105 +136,6 @@ export const getContentList = (contentType: IContentType) => {
     });
 
   return content.sort(sortByDate);
-};
-
-/**
- * Get content type with particular tag
- * @param {string} tag - tag to filter by
- */
-export const getContentWithTag = (tag: string, contentType: IContentType) => {
-  let contentDir;
-  let contentFiles;
-
-  switch (contentType) {
-    case "articles":
-      contentDir = articlesDirectory;
-      break;
-
-    case "notes":
-      contentDir = notesDirectory;
-      break;
-
-    case "work":
-      contentDir = workDirectory;
-      break;
-  }
-
-  contentFiles = fs.readdirSync(contentDir);
-
-  let contentData = contentFiles
-    .filter((content) => content.endsWith(".md"))
-    .map((content) => {
-      const path = `${contentDir}/${content}`;
-      const rawContent = fs.readFileSync(path, {
-        encoding: "utf-8",
-      });
-
-      const { data } = matter(rawContent);
-
-      return {
-        ...data,
-        previewImage: data.previewImage || "/images/image-placeholder.png",
-        id: uuid(),
-      };
-    });
-
-  const filteredContent = contentData.filter((content: IContentData) => {
-    return content.tags && content.tags.includes(tag);
-  });
-
-  return filteredContent.sort(sortByDate);
-};
-
-/**
- * Get content type with particular tag
- * @param {string} tag - tag to filter by
- */
-export const getContentInCategory = (
-  category: string,
-  contentType: IContentType
-) => {
-  let contentDir;
-  let contentFiles;
-
-  switch (contentType) {
-    case "articles":
-      contentDir = articlesDirectory;
-      break;
-
-    case "notes":
-      contentDir = notesDirectory;
-      break;
-
-    case "work":
-      contentDir = workDirectory;
-      break;
-  }
-
-  contentFiles = fs.readdirSync(contentDir);
-
-  let contentData = contentFiles
-    .filter((content) => content.endsWith(".md"))
-    .map((content) => {
-      const path = `${contentDir}/${content}`;
-      const rawContent = fs.readFileSync(path, {
-        encoding: "utf-8",
-      });
-
-      const { data } = matter(rawContent);
-
-      return {
-        ...data,
-        previewImage: data.previewImage || "/images/image-placeholder.png",
-        id: uuid(),
-      };
-    });
-
-  const filteredContent = contentData.filter((content: IContentData) => {
-    return content.category && content.category === category;
-  });
-
-  return filteredContent.sort(sortByDate);
 };
 
 /**
