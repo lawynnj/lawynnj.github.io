@@ -6,6 +6,7 @@ selectedWork: true
 description: "Create a poll to schedule a poker game and send email notifications."
 previewImage: "/images/work/game-scheduler/600-400.png"
 githubLink: "https://github.com/lawynnj/game-scheduler"
+websiteLink: "https://master.d1qe36p76mm37c.amplifyapp.com/"
 ---
 
 > **Role**: System Design, Engineering.
