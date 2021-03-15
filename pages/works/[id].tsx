@@ -4,7 +4,6 @@ import Image from "next/image";
 
 import { Layout, Container } from "../../components";
 import { getAllContentIds, getContentData } from "../../lib/content";
-import { IContentData } from "../articles/[id]";
 import { StyledContent } from "../../components/styles/content.styles";
 
 /**
@@ -29,6 +28,17 @@ const Article = ({ worksData }) => {
     </Layout>
   );
 };
+
+export interface IContentData {
+  id: string;
+  contentHtml: string;
+  date: Date;
+  title: string;
+  previewImage?: string;
+  description?: string;
+  tags?: string[];
+  category?: string;
+}
 
 export const getStaticPaths = async () => {
   const paths = getAllContentIds("work");
