@@ -49,7 +49,7 @@ const About = () => {
               a project:
               <ul className="skills-list">
                 <li>managing client relations</li>
-                <li>estimating Tasks</li>
+                <li>estimating tasks</li>
                 <li>setting up CI/CD</li>
                 <li>leading/co-developing the front-end and back-end</li>
                 <li>building RESTful services and microservices</li>
