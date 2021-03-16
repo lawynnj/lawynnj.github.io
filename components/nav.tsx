@@ -44,7 +44,7 @@ const Nav = () => {
 
               <li className="navLinkItem">
                 <a
-                  href="https://github.com/lawynnj/nextjs-portfolio"
+                  href="https://github.com/lawynnj/lawynnj.github.io"
                   target="_blank"
                   rel="noopener norefferer"
                 >
