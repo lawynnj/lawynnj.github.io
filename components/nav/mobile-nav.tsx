@@ -16,7 +16,7 @@ const MobileNav = () => {
 
           <li className="listItem">
             <Link href="/works">
-              <a className="link">Works</a>
+              <a className="link">Projects</a>
             </Link>
           </li>
 

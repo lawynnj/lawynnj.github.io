@@ -20,7 +20,7 @@ export const StyledCards = styled.section`
     img {
       transition: all var(--animation-duration)
         var(--transition-timing-function);
-      object-fit: cover;
+      object-fit: contain;
     }
     &:hover img {
       transform: scale(1.1);
@@ -86,7 +86,7 @@ export const StyledCards = styled.section`
 
   img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     margin-bottom: 0.4em;
     transform: scale(1);
     transition: 5s all;
