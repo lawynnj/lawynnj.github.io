@@ -20,12 +20,7 @@ const Article = ({ worksData }) => {
         <StyledContent>
           <time>{worksData.date}</time>
           {worksData.previewImage && (
-            <Image
-              unoptimized={true}
-              src={worksData.previewImage}
-              height={550}
-              width={1200}
-            />
+            <img src={worksData.previewImage} height={550} width={1200} />
           )}
           <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
         </StyledContent>
