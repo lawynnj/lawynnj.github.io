@@ -40,8 +40,6 @@ export const getAllContentIds = (contentType: IContentType) => {
 
     return {
       params: {
-        // This is where we switch it up to use slug instead of the filename for generating pages
-        // id: filename.replace(/\.md$/, ""),
         id: matterResult.data.slug,
       },
     };

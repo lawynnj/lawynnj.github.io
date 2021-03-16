@@ -21,6 +21,11 @@ export const StyledContent = styled.section`
     display: block;
     object-fit: contain;
   }
+  .img-sm {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   ul ul,
   ol ol {
     margin-bottom: 0;

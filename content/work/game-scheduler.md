@@ -9,7 +9,6 @@ githubLink: "https://github.com/lawynnj/game-scheduler"
 websiteLink: "https://master.d1qe36p76mm37c.amplifyapp.com/"
 ---
 
-> **Role**: System Design, Engineering.
 
 ## The Problem
 
@@ -73,6 +72,6 @@ I created a few iterations of the system architecture diagram and had some folks
 
 ## Low Fidelity Prototypes 
 
-![Alt Text](/images/work/game-scheduler/lf-1.jpg)
-![Alt Text](/images/work/game-scheduler/lf-2.jpg)
-![Alt Text](/images/work/game-scheduler/lf-3.jpg)
+<img src="/images/work/game-scheduler/lf-1.jpg" class="img-sm" >
+<img src="/images/work/game-scheduler/lf-2.jpg" class="img-sm" >
+<img src="/images/work/game-scheduler/lf-3.jpg" class="img-sm" >
