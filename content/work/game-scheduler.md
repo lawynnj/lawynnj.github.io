@@ -30,8 +30,6 @@ This lead to my next conclusion.
 I have been keen on learning about microservices for quite a while and decided that this was a good opportunity to build a distributed system. 
 
 
-It was time to start digging in so I began doing what most people would start with: Research! 
-
 > ## TLDR:
 > Problem: Scheduling poker games with friends via Instagram chats is very inefficient.  
 > Solution: Let's create our own polling app that employs a microservice architecture! 
