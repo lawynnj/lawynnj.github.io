@@ -1,5 +1,4 @@
 import React from "react";
-// import Image from "next/image";
 
 import { Layout, Container } from "../components";
 import { StyledAbout } from "../components/styles/about.styles";
@@ -18,12 +17,12 @@ const About = () => {
         <Container width="narrow">
           <div className="postContent">
             <div className="avatarImage">
-              {/* <Image
+              <img
                 src="/images/avatar.jpeg"
                 width={200}
                 height={200}
                 alt="Lawynn Jana"
-              /> */}
+              />
             </div>
             <p>
               I'm{" "}

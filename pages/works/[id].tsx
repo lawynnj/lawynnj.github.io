@@ -1,6 +1,5 @@
 import React from "react";
 import { useRouter } from "next/router";
-// import Image from "next/image";
 
 import { Layout, Container } from "../../components";
 import { getAllContentIds, getContentData } from "../../lib/content";
