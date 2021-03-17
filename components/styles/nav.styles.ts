@@ -57,7 +57,7 @@ export const NavSection = styled.header`
   }
 
   .navLinkItem {
-    margin-right: 0.5em;
+    margin-right: 1em;
 
     &:last-child {
       margin-right: 0;
