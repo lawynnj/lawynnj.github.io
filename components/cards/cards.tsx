@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import { StyledCards } from "../styles/cards.styles";
-import { GitHubIcon } from "../styles/footer.styles";
+
 interface ICard {
   basePath: string;
   data: {
@@ -33,7 +33,6 @@ const Cards = ({ data, basePath }: ICard) => {
               as={`/${basePath}/${singleCard.slug}`}
             >
               <a className="article-link">
-                {/* @ts-ignore */}
                 <img
                   src={singleCard.previewImage}
                   alt={singleCard.title}

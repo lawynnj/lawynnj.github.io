@@ -2,7 +2,7 @@ import React from "react";
 import {
   StyledFooterSection,
   GitHubIcon,
-  CodepenIcon,
+  LinkedinIcon,
   TwitterIcon,
 } from "./styles/footer.styles";
 import { Container } from "./container";
@@ -22,7 +22,17 @@ const Footer = () => (
             <GitHubIcon />
           </a>
         </li>
-
+        <li className="footerSocialLink">
+          <a
+            className="footerLink"
+            href="https://www.linkedin.com/in/lawynn-jana-35866797/"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="linkedin"
+          >
+            <LinkedinIcon />
+          </a>
+        </li>
         <li className="footerSocialLink">
           <a
             className="footerLink"
